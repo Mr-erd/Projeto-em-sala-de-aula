@@ -52,13 +52,17 @@ while True:
             
     elif opcao == "3":
         if not extrato:
+            print("================================================")
             print("Não foram realizadas movimentações.")
+            print("Saldo atual: R$ 0.00")
+            print("================================================")
         else:
-            print("Extrato:")
+            print("\n ============Extrato================"),
+        
             for movimento in extrato:
                 print(movimento)
             print(f"Saldo atual: R$ {saldo:.2f}")
-
+            print("\n ====================================")
 
     elif opcao == "4":
         print("Saindo do sistema. Até logo!")
